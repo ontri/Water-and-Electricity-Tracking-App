@@ -1,0 +1,47 @@
+/* Modern styles for the Water & Electricity Tracker application */
+:root {
+  --primary: #3a86ff;
+  --secondary: #8338ec;
+  --accent: #ff006e;
+  --light: #f8f9fa;
+  --dark: #212529;
+  --success: #38b000;
+  --warning: #ffbe0b;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+#root {
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgb(151, 23, 23);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+  .container {
+    padding: 1.5rem;
+  }
+}
