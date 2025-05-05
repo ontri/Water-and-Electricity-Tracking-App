@@ -1,0 +1,55 @@
+.dashboard {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard h2 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+form input {
+  display: block;
+  margin: 1rem 0;
+  padding: 0.8rem;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+form input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+form button {
+  padding: 0.8rem 1.5rem;
+  background-color: var(--success);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #2b8a00;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+}
